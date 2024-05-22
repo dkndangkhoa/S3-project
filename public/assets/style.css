@@ -1,0 +1,1394 @@
+/* GENERAL STYLING */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.navbar{
+    display: none;
+}
+
+
+/* HEADER */
+.desktop-nav{
+    background-color: #F5F5F5;
+    display: flex;
+    height: 180px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    cursor: pointer;
+    width: 250px;
+}
+
+.desktop-nav-ul{
+    display: flex;
+    gap: 60px;
+    font-size: 1.3rem;
+}
+
+.desktop-nav-ul li {
+    cursor: pointer;
+    padding-bottom: 3px;
+    color: #2B2929;
+    transition: ease-in-out 0.3s;
+}
+
+.desktop-nav-ul li:hover{
+    color: #504f4f;
+}
+
+.desktop-nav-ul li.current-page {
+    border-bottom: 3.5px solid transparent;
+    border-bottom-color: #2B2929;
+}
+
+.tutorial-button button{
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #2B2929;
+    color: #F5F5F5;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, .4);
+    transition: ease-in-out 0.3s;
+}
+
+.tutorial-button button:hover{
+    background-color: #313030;
+    box-shadow: 3px 5px 11px 3px rgba(0, 0, 0, .4);
+    transform: scale(1.05);
+}
+
+
+/* BANNER */
+.banner{
+    height: 420px;
+    background: linear-gradient(to right, #626262, #AC9452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.banner video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.banner h1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* HOME PAGE */
+
+.home-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0% 100px 0;
+}
+
+.home-title h2{
+    font-size: 2.7rem;
+}
+
+.home-title p{
+    margin: 50px 25% 60px 25%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.gold-text{
+    color: #AC9452;
+}
+
+/* POPULAR TUTORIALS SECTION */
+
+.popular-tutorials{
+    margin: 0 17% 250px 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-tutorials h3{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.popular-tutorials-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.popular-tutorial-single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-tutorial-single p{
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.popular-tutorial-single:hover p {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1; 
+  }
+
+
+.tutorial-grid-one{
+    display: flex;
+    gap: 10px;
+}
+
+.tutorial-grid-two{
+    display: flex;
+    gap: 10px;
+}
+
+.tutorial-grid-three{
+    display: flex;
+    gap: 10px;
+}
+
+.tutorial-1{
+    width: 70%;
+    height: 350px;
+    background-image: url(/public/images/homepage_lighting.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-2{
+    width: 30%;
+    height: 350px;
+    background-image: url(/public/images/gallery_pic11.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-3{
+    width: 35%;
+    height: 350px;
+    background-image: url(/public/images/homepage_telepromter.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-4{
+    width: 35%;
+    height: 350px;
+    background-image: url(/public/images/homepage_vp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-5{
+    width: 30%;
+    height: 350px;
+    background-image: url(/public/images/greenscreen.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-6{
+    width: 35%;
+    height: 350px;
+    background-image: url(/public/images/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tutorial-7{
+    width: 65%;
+    height: 350px;
+    background-image: url(/public/images/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* BOTTOM INFO */
+
+.bottom-info{
+    width: 100%;
+    background-color: #EEEEED;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-info-container{
+    margin: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+
+.bottom-info-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bottom-info-title{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bottom-info-text{
+    font-size: 1.1rem;
+}
+
+.bottom-info-text-smaller{
+    font-weight: 100;
+}
+
+
+.bottom-info-vid video{
+    width: 700px;
+}
+
+
+/* FOOTER */
+footer{
+    height: 200px;
+    background-color: #626262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-address p{
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: #F5F5F5;
+}
+
+.footer-image img{
+    width: 250px;
+}
+
+
+
+
+/* DISPLAY ERROR MESSAGE STYLING */
+.empty-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #0a0801;
+    margin: 4px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+#middle-bar{
+    background-color: #AC9452;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    list-style: none;
+    background-color: #EEEEED;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+    z-index: 1;
+}
+
+.menu.active {
+    max-height: 300px; 
+}
+
+.menu li {
+    margin: 10px 0;
+    padding: 0 30px;
+    font-weight: 700;
+}
+
+.menu a {
+    color: #242526;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* GALLERY PAGE */
+
+.gallery{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.image-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: -5px 6px 10px 0px rgba(0, 0, 0, .4)
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.image-column img:hover{
+    filter: brightness(50%);
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+
+.column-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 10% auto;
+    display: block;
+    max-width: 800px;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* BANNER */
+#gallery-banner{
+    height: 420px;
+    background-image: url(/public/images/gallery_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+/* BACK TO TOP BUTTON */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #AC9452; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+  
+#myBtn:hover {
+    background-color: #2B2929; /* Add a dark-grey background on hover */
+}
+
+
+
+/* SINGLE TUTORIAL PAGES */
+
+
+.single-tutorial-banner{
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+#lighting-banner{
+    background-image: url(/public/images/overall_lighting_banner.jpg);
+    filter:grayscale(50%);
+    background-size: contain;
+}
+
+#unreal-banner{
+    background-image: url(/public/images/unreal_banner.jpg);
+    filter:grayscale(50%);
+    background-size: cover;  
+}
+
+#vp-banner{
+    background-image: url(/public/images/homepage_vp.jpg);
+    filter:grayscale(50%);
+    background-size: cover;  
+}
+
+#teleprompter-banner{
+    background-image: url(/public/images/homepage_telepromter.jpg);
+    filter:grayscale(50%);
+    background-size: cover;  
+}
+
+#greenscreen-banner{
+    background-image: url(/public/images/greenscreen.JPG);
+    filter:grayscale(50%);
+    background-size: cover;  
+}
+
+.single-tutorial{
+    margin: 150px 0;
+}
+
+.single-tutorial-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 7%;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.single-tutorial-top-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.single-tutorial-top-div h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.single-tutorial-text{
+    line-height: 30px;
+}
+
+.single-tutorial-content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.single-tutorial-content button{
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #2B2929;
+    color: #F5F5F5;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, .4);
+}
+
+.recommended-tutorials-container{
+    width: 100%;
+    background-color: #EEEEED;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommended-tutorials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.recommended-tutorials h3{
+    font-size: 3.5rem;
+}
+
+.recommended-video-grid p{
+    font-weight: 700;
+}
+
+.recommended-video-grid a{
+    font-weight: 600;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+
+.recommended-video-grid a:hover{
+    color: rgba(128, 128, 128, 0.699);
+}
+
+
+.recommended-videos-container{
+    display: flex;
+    gap: 40px;
+}
+
+
+.recommended-video-grid img{
+    width: 350px;
+}
+
+
+/* TUTORIAL PAGE */
+
+#tutorial-banner{
+    height: 420px;
+    background-image: url(/public/images/2.png);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 40px;
+    padding: 0 60px;
+    margin: 150px 0;
+}
+
+.portfolio-container img{
+    width: 100%;
+}
+
+.portfolio-grid-img img,
+.project-title{
+    transition: 0.3s;
+}
+
+.portfolio-grid-img img:hover{
+    filter: brightness(50%);
+    
+}
+
+.portfolio-grid-img:hover .project-title{
+    color: #e9e6dd
+}
+
+.portfolio-grid{
+    position: relative;
+    cursor: pointer;
+}
+
+.project-title{
+    color: #242526;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+/* ABOUT PAGE */
+
+#about-banner{
+    height: 420px;
+    background-image: url(/public/images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.one{
+    display: flex;
+    padding: 0 7%;
+    margin-top: 150px;
+    gap: 100px;
+}
+
+.img2{
+    width: 50%;
+}
+
+.img2 img{
+    width: 100%;
+}
+
+.details1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.details1 h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.details1 p{
+    font-size: 1.1rem;
+}
+
+
+/*TEACHER IMAGE*/
+.teacherImage {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.teacherImage img {
+    width: 60%;
+}
+
+
+.lastDetails{
+    display: flex;
+    padding: 0 10%;
+    margin-top: 150px;
+    gap: 100px;
+}
+
+.contact-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details-text{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.contact h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contact p{
+    font-size: 1.1rem;
+}
+
+.schoolImage{
+    width: 50%;
+}
+
+
+.contact img {
+    width: 20px;
+}
+
+.schoolImage img {
+    width: 100%;
+
+}
+
+
+/*-----Contact Page Specific-----*/
+
+#contact-banner{
+    height: 420px;
+    background-image: url(/public/images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+/*Text blurb section*/
+.ctc_body {
+    padding: 100px 250px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.ctc_headline { /*Big text*/
+    font-size: 250%;
+    margin-bottom: 50px;
+}
+
+.clr {  /*Adds colour as per Figma prototype*/
+    color: rgb(172, 142, 102);
+}
+
+/*Form Section*/
+.ctc_form {
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/*Left half of screen with contact info*/
+.ctcformL {
+    padding: 150px 75px 50px 250px;
+    text-align: left;
+}
+
+.larger { /*Changes font size and adds a little buffer*/
+    font-size: 200%;
+    padding: 0px 0px 25px;
+}
+
+.pixel-text{
+    font-weight: 400;
+}
+
+.large {
+    font-size: 150%;
+    padding: 0px 0px 25px;
+}
+
+.icongrid { /*Smaller grid for icons and text info*/
+    display: grid;
+    grid-template-columns: 50px 250px;
+    grid-template-rows: 45% 30% 25%;
+    padding: 0px;
+    margin: 0px;
+}
+
+div .icongrid { 
+    padding: 0px;
+    margin: 0px;
+}
+
+.formicon { /*Icons*/
+    float: left;
+    clear: left;
+}
+
+.iconcaption { /*Contact info*/
+    font-weight: 100;
+    padding: 0px 0px 25px;
+}
+
+/*Right half of screen with the form*/
+.ctcformR {
+    padding: 100px 250px 50px 75px;
+}
+
+.formtitle { /*Field titles*/
+    font-size: 85%;
+    margin: 10px 0px;
+}
+
+.formfield { /*Style for the text fields*/
+    width: 100%;
+    height: 30px;
+    resize: vertical;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0px 0px 10px;
+    font-size: 80%;
+    color: rgb(46, 46, 46);
+    padding: 7px 10px;  
+}
+
+.message { /*Special style for the larger message field*/
+    height: 150px;
+    resize: vertical;
+    vertical-align: text-top;
+}
+
+.formbutton { /*Send button*/
+    background-color: black;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 50px;
+    font-size: 125%;
+    margin: 25px 0px 0px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px){
+
+
+
+    #index-banner h1{
+        display: none;
+    }
+
+    /* BOTTOM INFO */
+
+    .bottom-info{
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .bottom-info-container{
+        margin: 10px;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .bottom-info-details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bottom-info-title{
+        font-size: 0.8rem;
+    }
+
+    .bottom-info-text{
+        font-size: 0.8rem;
+    }
+
+
+    .bottom-info-vid video{
+        width: 100%;
+    }
+
+    #gallery-banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gallery-banner, #lighting-banner, #unreal-banner, #tutorial-banner, #greenscreen-banner, #teleprompter-banner, #vp-banner, #about-banner, #contact-banner h1{
+        font-size: 1.5rem;
+    }
+
+    #gallery-banner, #lighting-banner, #unreal-banner, #tutorial-banner, #greenscreen-banner, #teleprompter-banner, #vp-banner, #about-banner, #contact-banner{
+        background: linear-gradient(to right, #626262, #AC9452);
+        filter: none;
+    }
+
+    .gallery{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    .image-column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -2px 2px 9px 0px rgba(0, 0, 0, .4)
+    }
+    
+    .image-column img {
+        max-width: 100%;
+    }
+    
+    .column-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+    
+    .column-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+
+    .modal{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-img{
+        padding: 20px;
+    }
+
+    footer{
+        height: 200px;
+        background-color: #626262;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-address p{
+        padding: 0 30px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .footer-image img{
+        width: 180px;
+    }
+
+    .mobile-logo img{
+        width: 80px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #F5F5F5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    .home-title {
+        margin: 40px 0 40px 0;
+    }
+
+    .home-title h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .home-title p{
+        font-size: 0.8rem;
+        margin: 20px 6% 30px 6%;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .popular-tutorials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-tutorials, .portfolio-container, .gallery, .single-tutorial {
+        margin-bottom: 30px;
+    }
+
+    .popular-tutorials h3 {
+        font-size: 1.6rem;
+    }
+
+    .popular-tutorials-container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .tutorial-grid-one{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tutorial-grid-two{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tutorial-grid-three{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tutorial-1, .tutorial-2, .tutorial-3, .tutorial-4, .tutorial-5, .tutorial-6, .tutorial-7{
+        width: 350px;
+    }
+
+    .single-tutorial{
+        margin-top: 30px;
+    }
+
+    .single-tutorial-content button{
+        font-size: 1rem;
+        padding: 10px 18px;
+        width: 100%;
+        border: 2px solid #2B2929;
+    }
+
+    .single-tutorial-content{
+        gap: 30px;
+    }
+
+    .single-tutorial-wrapper{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 240px;
+    }
+
+    .single-tutorial-top-div h2{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+
+    .recommended-tutorials-container{
+        width: 100%;
+        background-color: #EEEEED;
+        height: 60vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .recommended-tutorials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        margin-left: 20px;
+    }
+
+    .recommended-tutorials h3{
+        display: none;
+    }
+    
+    .recommended-video-grid{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .recommended-video-grid p{
+        font-weight: 700;
+    }
+    
+    .recommended-video-grid a{
+        font-weight: 600;
+        color: grey;
+        transition: ease-in-out 0.3s;
+    }
+    
+    .recommended-video-grid a:hover{
+        color: rgba(128, 128, 128, 0.699);
+    }
+    
+    
+    .recommended-videos-container{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .recommended-video-grid-text{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .recommended-video-grid img{
+        width: 100px;
+    }
+
+
+    .portfolio-container{
+        display: flex;
+        gap: 5px;
+        padding: 20px;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .project-title {
+        color: #e9e6dd;
+        font-size: 1.5rem;
+    }
+
+
+    /* ABOUT PAGE */
+
+    .teacherImage, .teacherImage img{
+        display: none;
+    }
+
+    .one{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 7%;
+        margin-top: 30px;
+        gap: 50px;
+    }
+    
+    .img2{
+        width: 100%;
+    }
+    
+    .img2 img{
+        width: 100%;
+    }
+    
+    .details1{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .details1 h2{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    
+    .details1 p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    
+    /*TEACHER IMAGE*/
+    .teacherImage {
+        display: none;
+    }
+    
+    .teacherImage img {
+        width: 60%;
+    }
+    
+    
+    .lastDetails{
+        display: flex;
+        padding: 0 10%;
+        margin-top: 70px;
+        text-align: center;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 50%;
+    }
+
+    .contact-details{
+        gap: 3px;
+        align-items: center;
+    }
+    
+    .contact h3{
+        display: none;
+    }
+
+
+    
+    .schoolImage{
+        display: none;
+    }
+    
+    
+    .contact img {
+        width: 20px;
+    }
+    
+    .schoolImage img {
+        width: 100%;
+    
+    }
+    #about-bottom-info{
+        height: 70vh;
+    }
+
+
+    /* CONTACT PAGE */
+
+
+    .ctc_form{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin: 30px 0;
+        background-color: #F5F5F5;
+    }
+
+    .ctcformL{
+        padding: 0 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctcformR{
+        padding: 0 7%;
+    }
+
+    .formbutton{
+        font-size: 1rem;
+        padding: 10px 18px;
+        width: 100%;
+        border: 2px solid #2B2929;
+    }
+
+    .larger, .large{
+        display: none;
+    }
+}

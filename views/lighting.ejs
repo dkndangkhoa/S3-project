@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting</title>
+    <link href= "/public/assets/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="/public/assets/script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="/"><div class="mobile-logo">
+            <img src="/public/images/logo.png" alt="pixel playground logo">
+        </div></a>
+
+		<div class="menu-toggle" id="menuToggle">
+			<div class="bar"></div>
+			<div class="bar" id="middle-bar"></div>
+			<div class="bar"></div>
+		</div>
+		<ul class="menu" id="menu">
+            <li><a href="/tutorials">Tutorials</a></li>
+			<li><a href="/gallery">Gallery</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+
+    <header>
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="/"><img src="/public/images/logo.png" alt="pixel playground logo"></a>
+            </div>
+
+            <ul class="desktop-nav-ul">
+                <a href="/"><li>Home</li></a>
+                <a href="/gallery"><li>Gallery</li></a>
+                <a href="/about"><li>About</li></a>
+                <a href="/contact"><li>Contact</li></a>
+            </ul>
+
+            <div class="tutorial-button">
+                <a href="/tutorials"><button>Tutorials</button></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main> 
+        <section class="banner lighting-banner single-tutorial-banner" id="lighting-banner">
+            <h1>Lighting</h1>
+        </section>
+
+        <section class="single-tutorial">
+
+            <% if (category && category.tutorials && category.tutorials.length > 0) { %>
+
+                <div class="single-tutorial-container">
+                    <% category.tutorials.forEach(tutorial => { %>
+                        <div class="single-tutorial-wrapper">
+
+                            <div class="single-tutorial-video">
+    
+                                <% if (tutorial && tutorial.youtubeIframe) { %>
+                                    <div class="video-container">
+                                        <%- tutorial.youtubeIframe %>
+                                    
+                                        <% } else { %>
+                                            <p>No YouTube video available.</p>
+                                        <% } %>
+
+                                    </div>
+    
+                            </div>
+    
+                            <div class="single-tutorial-content">
+    
+                                <div class="single-tutorial-top-div">
+                                    <h2><%= tutorial.title %></h2>
+    
+                                    <p class="single-tutorial-text"><%= tutorial.text %></p>
+                                </div>
+    
+                                <% if (tutorial.pdfUrl) { %>
+                                    <a href="/view-pdf/<%= tutorial._id %>" target="_blank"><button>View PDF</button></a>
+                                <% } %>
+            
+                                <!-- <p>Created at: <%= tutorial.createdAt %></p> -->
+    
+                            </div>
+                        
+    
+                        </div>
+    
+                    <% }); %>
+                </div>
+            <% } else { %>
+                <p>No tutorials available for the Camera category.</p>
+            <% } %>
+
+
+        </section>
+
+        <section class="recommended-tutorials-container">
+            <div class="recommended-tutorials">
+                
+                <h3>WATCH MORE</h3>
+
+                <div class="recommended-videos-container">
+
+
+
+                    <div class="recommended-video-grid">
+                        <img src="/public/images/watchmore_greenscreen.jpg" alt="">
+                        <div class="recommended-video-grid-text">
+                            <p>Green Screen</p>
+                            <a href="/greenscreen">View Tutorial</a>
+                        </div>
+                    </div>
+
+                    <div class="recommended-video-grid">
+                        <img src="/public/images/watchmore_unrealengine.jpg" alt="">
+
+                        <div class="recommended-video-grid-text">
+                            <p>Unreal Engine</p>
+                            <a href="/unreal">View Tutorial</a>
+                        </div>
+
+                    </div>
+
+                    <div class="recommended-video-grid">
+                        <img src="/public/images/watchmore_telepromter.jpg" alt="">
+                        <div class="recommended-video-grid-text">
+                            <p>Teleprompter</p>
+                            <a href="/teleprompter">View Tutorial</a>
+                        </div>
+                    </div>
+
+                    <div class="recommended-video-grid">
+                        <img src="/public/images/watchmore_vp.jpeg" alt="">
+                        <div class="recommended-video-grid-text">
+                            <p>Virtual Production</p>
+                            <a href="/virtual">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    
+
+
+    </main>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <footer>
+
+        <div class="footer-image">
+            <img src="/public/images/logo.png" alt="">
+        </div>
+
+        <div class="footer-address">
+            <p>Fontys R10, Rachelsmolen 1, 5612 MA Eindhoven</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

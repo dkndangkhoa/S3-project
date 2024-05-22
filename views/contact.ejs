@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Playground - Contact</title>
+    <link href= "/public/assets/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="/public/assets/script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="/"><div class="mobile-logo">
+            <img src="/public/images/logo.png" alt="pixel playground logo">
+        </div></a>
+
+		<div class="menu-toggle" id="menuToggle">
+			<div class="bar"></div>
+			<div class="bar" id="middle-bar"></div>
+			<div class="bar"></div>
+		</div>
+		<ul class="menu" id="menu">
+            <li><a href="/tutorials">Tutorials</a></li>
+			<li><a href="/gallery">Gallery</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+
+    <header>
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="/"><img src="/public/images/logo.png" alt="pixel playground logo"></a>
+            </div>
+
+            <ul class="desktop-nav-ul">
+                <a href="/"><li>Home</li></a>
+                <a href="/gallery"><li>Gallery</li></a>
+                <a href="/about"><li>About</li></a>
+                <a href="#"><li class="current-page">Contact</li></a>
+            </ul>
+
+            <div class="tutorial-button">
+                <a href="/tutorials"><button>Tutorials</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main> 
+        <section class="banner" id="contact-banner">
+            <h1>CONTACT US</h1>
+        </section>
+
+        <section class="ctc_form">
+            <div class="ctcformL">
+                <p class="ctc_blurb larger"><b>CONTACT <span class="gold-text">US</span></b></p>
+                <p class="ctc_blurb large pixel-text">Pixel Playground, Room 0.48</p>
+                <div class="icongrid">
+                <div><image class="formicon" src="public/images/location.png" width="25px"></image></div> <div><p class="iconcaption">Fontys R10, Campus Rachelsmolen<br>Eindhoven, Nord Brabant<br>Netherlands</p></div>
+                <div><image class="formicon" src="public/images/email.png" width="25px"></image></div> <div><p class="iconcaption">ouremail@fhict.nl</p></div>
+                <div><image class="formicon" src="public/images/smartphone.png" width="25px"></image></div> <div><p class="iconcaption">+31 234 5678</p></div>
+                </div>
+            </div>
+            <div class="ctcformR">
+                <!--Insert the contact form here, adjust .ctcformR in the .css file if necessary.-->
+                <p class="formtitle">Name</p>
+                <input class="formfield" type="text" id="ctc_name" name="contactname" placeholder="Enter your name...">
+                <p class="formtitle">Email</p>
+                <input class="formfield" type="email" id="ctc_email" name="contactemail" placeholder="Enter your email...">
+                <p class="formtitle">Message</p>
+                <textarea class="formfield message" id="ctc_msg" name="contactmessage" placeholder="Enter your message..."></textarea>
+                <input class="formbutton" type="submit" value="Send">       <!--Message field currently is still single-line-->
+            </div> 
+        </section>
+
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <footer>
+
+        <div class="footer-image">
+            <img src="/public/images/logo.png" alt="">
+        </div>
+
+        <div class="footer-address">
+            <p>Fontys R10, Rachelsmolen 1, 5612 MA Eindhoven</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

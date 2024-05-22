@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Playground - Home</title>
+    <link href= "/public/assets/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="/public/assets/script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="/"><div class="mobile-logo">
+            <img src="/public/images/logo.png" alt="pixel playground logo">
+        </div></a>
+
+		<div class="menu-toggle" id="menuToggle">
+			<div class="bar"></div>
+			<div class="bar" id="middle-bar"></div>
+			<div class="bar"></div>
+		</div>
+		<ul class="menu" id="menu">
+            <li><a href="/tutorials">Tutorials</a></li>
+			<li><a href="/gallery">Gallery</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+
+    <header>
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="/"><img src="/public/images/logo.png" alt="pixel playground logo"></a>
+            </div>
+
+            <ul class="desktop-nav-ul">
+                <a href="/"><li class="current-page">Home</li></a>
+                <a href="/gallery"><li>Gallery</li></a>
+                <a href="/about"><li>About</li></a>
+                <a href="/contact"><li>Contact</li></a>
+            </ul>
+
+            <div class="tutorial-button">
+                <a href="/tutorials"><button>Tutorials</button></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main> 
+        <section class="banner" id="index-banner">
+
+            <video autoplay muted loop playsinline id="myVideo">
+                <source src="/public/videos/bannertop.mp4" type="video/mp4">
+            </video>
+
+            <h1>Welcome to the pixel playground</h1>
+        </section>
+
+        <section class="home-title">
+            <h2>Pixel <span class="gold-text">Playground</span> – where technology meets cinematic intrigue</h2>
+            <p>"Welcome to Pixel Playground, a state of the art virtual production studio. 
+                How do we stand out? Through enlightening tutorials, guiding you through the art of mastering our cutting-edge equipment."
+            </p>
+        </section>
+
+
+        <section class="popular-tutorials">
+            <h3><span class="gold-text">Popular</span> Tutorials</h3>
+
+            <div class="popular-tutorials-container">
+
+                <div class="tutorial-grid-one">
+                    
+                    <article class="popular-tutorial-single tutorial-1">
+                        <a href="/lighting">
+                            <div class="title-overlay" onclick="toggleTitle(this)">
+                                <p>Lighting</p>
+                             </div>
+                        </a>
+                    </article>
+
+
+                    <article class="popular-tutorial-single tutorial-2">
+                        <a href="/unreal">
+                            <div class="title-overlay" onclick="toggleTitle(this)">
+                                <p>Unreal Engine</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="tutorial-grid-two">
+                    <article class="popular-tutorial-single tutorial-3">
+                        <a href="/teleprompter">
+                            <div class="title-overlay" onclick="toggleTitle(this)">
+                                <p>Teleprompter</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular-tutorial-single tutorial-4">
+                        <a href="/virtual">
+                            <div class="title-overlay" onclick="toggleTitle(this)">
+                                <p>Virtual Production</p>
+                            </div>
+                        </a>
+                    </article>
+    
+                    <article class="popular-tutorial-single tutorial-5">
+                        <a href="/greenscreen">
+                            <div class="title-overlay" onclick="toggleTitle(this)">
+                                <p>Green Screen</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- <div class="tutorial-grid-three">
+                    <article class="popular-tutorial-single tutorial-6">
+                        <div class="title-overlay" onclick="toggleTitle(this)">
+                            <p>LOREM</p>
+                        </div>
+                    </article>
+
+                    <article class="popular-tutorial-single tutorial-7">
+                        <div class="title-overlay" onclick="toggleTitle(this)">
+                            <p>LOREM</p>
+                        </div>
+                    </article>
+                </div> -->
+
+
+            </div>
+        </section>
+
+
+        <section class="bottom-info">
+            <div class="bottom-info-container">
+                <div class="bottom-info-vid">
+                    <!-- <img src="/public/images/1.png" alt=""> -->
+                    
+                    <video autoplay muted loop playsinline id="bottom-info-video">
+                        <source src="/public/videos/videobottom.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="bottom-info-details">
+                    <p class="bottom-info-title">Why you should use <span class="gold-text">The Pixel Playground</span></p>
+                    <p class="bottom-info-text">
+                        Our virtual lab ensures swift and effective training for new users through concise tutorials. The use of cutting-edge equipment keeps us competitive, attracting users seeking innovation and building our reputation for excellence.</p>
+                    <p class="bottom-info-text">This technology also sparks creativity, empowering users to experiment and stay ahead in both artistry and technology.</p>
+                    <p class="bottom-info-text bottom-info-text-smaller">Efficient Training for New Users</p>
+                    <p class="bottom-info-text bottom-info-text-smaller">Stay Competitive in the Industry</p>
+                    <p class="bottom-info-text bottom-info-text-smaller">Innovation and Creativity Boost</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <footer>
+
+        <div class="footer-image">
+            <img src="/public/images/logo.png" alt="">
+        </div>
+
+        <div class="footer-address">
+            <p>Fontys R10, Rachelsmolen 1, 5612 MA Eindhoven</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
